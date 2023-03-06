@@ -13,14 +13,15 @@
   </ion-row>
 
   <ion-grid>
-    <ion-row> 
-      <ion-col><ion-button (click)="somarum()" color="dark" expand="full">1</ion-button></ion-col>
-      <ion-col><ion-button (click)="somartres()" color="dark" expand="full">3</ion-button></ion-col>
-      <ion-col><ion-button (click)="somarseis()" color="dark" expand="full">6</ion-button></ion-col>
-      <ion-col><ion-button (click)="somarnove()" color="dark" expand="full">9</ion-button></ion-col>
-      <ion-col><ion-button (click)="somardoze()" color="dark" expand="full">12</ion-button></ion-col>
+    <ion-row>
+      <ion-col><ion-button (click)="somarumponto()" color="light" expand="full">1</ion-button></ion-col>
+      <ion-col><ion-button (click)="somartresponto()" color="light" expand="full">3</ion-button></ion-col>
+      <ion-col><ion-button (click)="somarseisponto()" color="light" expand="full">6</ion-button></ion-col>
+      <ion-col><ion-button (click)="somarnoveponto()" color="light" expand="full">9</ion-button></ion-col>
+      <ion-col><ion-button (click)="somardozeponto()" color="light" expand="full">12</ion-button></ion-col>
     </ion-row>
   </ion-grid>
+
   <ion-grid>
     <ion-row>
     <ion-col size="6">
@@ -30,38 +31,42 @@
       <ion-list>Time 2</ion-list>
     </ion-col>
     </ion-row>
-  </ion-grid> 
+  </ion-grid>
+
     <ion-grid>
     <ion-row>
     <ion-col size="">
-      <ion-button (click)="botaosomatimeum()" color="dark">+</ion-button>
+      <ion-button (click)="botaosomatimeum()" color="light">+</ion-button>
     </ion-col>
       <ion-col size="">
-        <ion-button (click)="botaosomatimedois()" color="dark">+</ion-button>
+        <ion-button (click)="botaosomatimedois()" color="light">+</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
+
   <ion-grid>
     <ion-row>
     <ion-col size="6">
-      <ion-button color="light">{{pctimeum}}</ion-button>
+      <ion-button color="light">{{placartimeum}}</ion-button>
 
     </ion-col>
     <ion-col size="6">
-      <ion-button color="light">{{pctimedois}}</ion-button>
+      <ion-button color="light">{{placartimedois}}</ion-button>
     </ion-col>
     </ion-row>
   </ion-grid>
+
   <ion-grid>
     <ion-row>
     <ion-col size="">
-      <ion-button (click)="botaosubtraitimeum()" color="dark">-</ion-button>
+      <ion-button (click)="botaosubtraitimeum()" color="light">-</ion-button>
     </ion-col>
       <ion-col size="">
-        <ion-button (click)="botaosubtraitimedois()" color="dark">-</ion-button>
+        <ion-button (click)="botaosubtraitimedois()" color="light">-</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
+
   <ion-grid>
     <ion-row>
       <ion-col size="6">
@@ -69,6 +74,7 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
   <ion-grid>
     <ion-row>
       <ion-col size="6">
@@ -79,6 +85,7 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
   <ion-grid>
     <ion-row>
       <ion-col size="6">
@@ -89,10 +96,11 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
   <ion-grid>
     <ion-row>
       <ion-col size="">
-        <ion-button (click)="zerarplacar()" color="dark" expand="full">Zerar</ion-button>
+        <ion-button (click)="zerarplacar()" color="light" expand="full">Zerar</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

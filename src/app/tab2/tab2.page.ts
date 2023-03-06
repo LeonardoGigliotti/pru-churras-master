@@ -8,74 +8,74 @@ import { Component } from '@angular/core';
 export class Tab2Page {
 
   contando=1;
-  pctimeum=0;
-  pctimedois=0;
+  placartimeum=0;
+  placartimedois=0;
   partidatimeum=0;
   partidatimedois=0;
 
 
   constructor() {}
 
-  somarum () {
+  somarumponto () {
     this.contando = 1
   }
 
-  somartres () {
+  somartresponto () {
     this.contando = 3
   }
 
-  somarseis () {
+  somarseisponto () {
     this.contando = 6
   }
 
-  somarnove () {
+  somarnoveponto () {
     this.contando = 9
   }
 
-  somardoze () {
+  somardozeponto () {
     this.contando = 12
   }
 
   botaosomatimeum () {
-    this.pctimeum += this.contando
+    this.placartimeum += this.contando
     this.contando = 1
 
-    if (this.pctimeum >= 12) {
+    if (this.placartimeum >= 12) {
       this.partidatimeum +=1
-      this.pctimeum =0
-      this.pctimedois =0
+      this.placartimeum =0
+      this.placartimedois =0
     }
   }
 
   botaosomatimedois () {
-    this.pctimedois += this.contando
+    this.placartimedois += this.contando
     this.contando = 1
 
-    if (this.pctimedois >= 12) {
+    if (this.placartimedois >= 12) {
       this.partidatimedois +=1
-      this.pctimedois =0
-      this.pctimeum =0
+      this.placartimedois =0
+      this.placartimeum =0
     }
   }
 
   botaosubtraitimeum () {
- 
-    if (this.pctimeum >0){
-      this.pctimeum -= this.contando
+
+    if (this.placartimeum >0){
+      this.placartimeum -= this.contando
       this.contando = 1
     }
   }
 
   botaosubtraitimedois () {
-    if (this.pctimedois >0){
-      this.pctimedois -= this.contando
+    if (this.placartimedois >0){
+      this.placartimedois -= this.contando
       this.contando = 1
     }
   }
 
   zerarplacar () {
-    this.pctimeum = 0
-    this.pctimedois = 0
+    this.placartimeum = 0
+    this.placartimedois = 0
     this.partidatimeum = 0
     this.partidatimedois =0
 
